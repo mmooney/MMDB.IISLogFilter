@@ -34,29 +34,32 @@
             this._btnRemoveFiles = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this._txtSourceIP = new System.Windows.Forms.TextBox();
-            this._txtUser = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this._txtUrl = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this._chkExcludeSourceIP = new System.Windows.Forms.CheckBox();
-            this._chkExcludeUser = new System.Windows.Forms.CheckBox();
-            this._chkExcludeUrl = new System.Windows.Forms.CheckBox();
-            this._chkExcludeHttpStatus = new System.Windows.Forms.CheckBox();
-            this._txtHttpStatus = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this._chkExcludeUserAgent = new System.Windows.Forms.CheckBox();
-            this._txtUserAgent = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this._txtOutputFile = new System.Windows.Forms.TextBox();
-            this._chkAppendOutputFile = new System.Windows.Forms.CheckBox();
-            this._btnGo = new System.Windows.Forms.Button();
             this._chkExcludeQueryString = new System.Windows.Forms.CheckBox();
             this._txtQueryString = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this._chkExcludeUserAgent = new System.Windows.Forms.CheckBox();
+            this._txtUserAgent = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this._chkExcludeHttpStatus = new System.Windows.Forms.CheckBox();
+            this._txtHttpStatus = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this._chkExcludeUrl = new System.Windows.Forms.CheckBox();
+            this._chkExcludeUser = new System.Windows.Forms.CheckBox();
+            this._chkExcludeSourceIP = new System.Windows.Forms.CheckBox();
+            this._txtUrl = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this._txtUser = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this._txtSourceIP = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this._rdoCountIPAddresses = new System.Windows.Forms.RadioButton();
+            this._rdoCombineFiles = new System.Windows.Forms.RadioButton();
+            this._btnGo = new System.Windows.Forms.Button();
+            this._chkAppendOutputFile = new System.Windows.Forms.CheckBox();
+            this._txtOutputFile = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this._rdoCountUserAgents = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -143,109 +146,31 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filters";
             // 
-            // label1
+            // _chkExcludeQueryString
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Source IP:";
+            this._chkExcludeQueryString.AutoSize = true;
+            this._chkExcludeQueryString.Location = new System.Drawing.Point(200, 107);
+            this._chkExcludeQueryString.Name = "_chkExcludeQueryString";
+            this._chkExcludeQueryString.Size = new System.Drawing.Size(64, 17);
+            this._chkExcludeQueryString.TabIndex = 21;
+            this._chkExcludeQueryString.Text = "Exclude";
+            this._chkExcludeQueryString.UseVisualStyleBackColor = true;
             // 
-            // _txtSourceIP
+            // _txtQueryString
             // 
-            this._txtSourceIP.Location = new System.Drawing.Point(95, 29);
-            this._txtSourceIP.Name = "_txtSourceIP";
-            this._txtSourceIP.Size = new System.Drawing.Size(100, 20);
-            this._txtSourceIP.TabIndex = 1;
+            this._txtQueryString.Location = new System.Drawing.Point(94, 107);
+            this._txtQueryString.Name = "_txtQueryString";
+            this._txtQueryString.Size = new System.Drawing.Size(100, 20);
+            this._txtQueryString.TabIndex = 20;
             // 
-            // _txtUser
+            // label7
             // 
-            this._txtUser.Location = new System.Drawing.Point(95, 55);
-            this._txtUser.Name = "_txtUser";
-            this._txtUser.Size = new System.Drawing.Size(100, 20);
-            this._txtUser.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "User";
-            // 
-            // _txtUrl
-            // 
-            this._txtUrl.Location = new System.Drawing.Point(95, 81);
-            this._txtUrl.Name = "_txtUrl";
-            this._txtUrl.Size = new System.Drawing.Size(100, 20);
-            this._txtUrl.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 82);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "URL:";
-            // 
-            // _chkExcludeSourceIP
-            // 
-            this._chkExcludeSourceIP.AutoSize = true;
-            this._chkExcludeSourceIP.Location = new System.Drawing.Point(201, 29);
-            this._chkExcludeSourceIP.Name = "_chkExcludeSourceIP";
-            this._chkExcludeSourceIP.Size = new System.Drawing.Size(64, 17);
-            this._chkExcludeSourceIP.TabIndex = 10;
-            this._chkExcludeSourceIP.Text = "Exclude";
-            this._chkExcludeSourceIP.UseVisualStyleBackColor = true;
-            // 
-            // _chkExcludeUser
-            // 
-            this._chkExcludeUser.AutoSize = true;
-            this._chkExcludeUser.Location = new System.Drawing.Point(201, 55);
-            this._chkExcludeUser.Name = "_chkExcludeUser";
-            this._chkExcludeUser.Size = new System.Drawing.Size(64, 17);
-            this._chkExcludeUser.TabIndex = 11;
-            this._chkExcludeUser.Text = "Exclude";
-            this._chkExcludeUser.UseVisualStyleBackColor = true;
-            // 
-            // _chkExcludeUrl
-            // 
-            this._chkExcludeUrl.AutoSize = true;
-            this._chkExcludeUrl.Location = new System.Drawing.Point(201, 81);
-            this._chkExcludeUrl.Name = "_chkExcludeUrl";
-            this._chkExcludeUrl.Size = new System.Drawing.Size(64, 17);
-            this._chkExcludeUrl.TabIndex = 12;
-            this._chkExcludeUrl.Text = "Exclude";
-            this._chkExcludeUrl.UseVisualStyleBackColor = true;
-            // 
-            // _chkExcludeHttpStatus
-            // 
-            this._chkExcludeHttpStatus.AutoSize = true;
-            this._chkExcludeHttpStatus.Location = new System.Drawing.Point(201, 135);
-            this._chkExcludeHttpStatus.Name = "_chkExcludeHttpStatus";
-            this._chkExcludeHttpStatus.Size = new System.Drawing.Size(64, 17);
-            this._chkExcludeHttpStatus.TabIndex = 15;
-            this._chkExcludeHttpStatus.Text = "Exclude";
-            this._chkExcludeHttpStatus.UseVisualStyleBackColor = true;
-            // 
-            // _txtHttpStatus
-            // 
-            this._txtHttpStatus.Location = new System.Drawing.Point(95, 133);
-            this._txtHttpStatus.Name = "_txtHttpStatus";
-            this._txtHttpStatus.Size = new System.Drawing.Size(100, 20);
-            this._txtHttpStatus.TabIndex = 14;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 136);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "HTTP Status:";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(19, 108);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 13);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Query String:";
             // 
             // _chkExcludeUserAgent
             // 
@@ -273,50 +198,151 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "User Agent:";
             // 
+            // _chkExcludeHttpStatus
+            // 
+            this._chkExcludeHttpStatus.AutoSize = true;
+            this._chkExcludeHttpStatus.Location = new System.Drawing.Point(201, 135);
+            this._chkExcludeHttpStatus.Name = "_chkExcludeHttpStatus";
+            this._chkExcludeHttpStatus.Size = new System.Drawing.Size(64, 17);
+            this._chkExcludeHttpStatus.TabIndex = 15;
+            this._chkExcludeHttpStatus.Text = "Exclude";
+            this._chkExcludeHttpStatus.UseVisualStyleBackColor = true;
+            // 
+            // _txtHttpStatus
+            // 
+            this._txtHttpStatus.Location = new System.Drawing.Point(95, 133);
+            this._txtHttpStatus.Name = "_txtHttpStatus";
+            this._txtHttpStatus.Size = new System.Drawing.Size(100, 20);
+            this._txtHttpStatus.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 136);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "HTTP Status:";
+            // 
+            // _chkExcludeUrl
+            // 
+            this._chkExcludeUrl.AutoSize = true;
+            this._chkExcludeUrl.Location = new System.Drawing.Point(201, 81);
+            this._chkExcludeUrl.Name = "_chkExcludeUrl";
+            this._chkExcludeUrl.Size = new System.Drawing.Size(64, 17);
+            this._chkExcludeUrl.TabIndex = 12;
+            this._chkExcludeUrl.Text = "Exclude";
+            this._chkExcludeUrl.UseVisualStyleBackColor = true;
+            // 
+            // _chkExcludeUser
+            // 
+            this._chkExcludeUser.AutoSize = true;
+            this._chkExcludeUser.Location = new System.Drawing.Point(201, 55);
+            this._chkExcludeUser.Name = "_chkExcludeUser";
+            this._chkExcludeUser.Size = new System.Drawing.Size(64, 17);
+            this._chkExcludeUser.TabIndex = 11;
+            this._chkExcludeUser.Text = "Exclude";
+            this._chkExcludeUser.UseVisualStyleBackColor = true;
+            // 
+            // _chkExcludeSourceIP
+            // 
+            this._chkExcludeSourceIP.AutoSize = true;
+            this._chkExcludeSourceIP.Location = new System.Drawing.Point(201, 29);
+            this._chkExcludeSourceIP.Name = "_chkExcludeSourceIP";
+            this._chkExcludeSourceIP.Size = new System.Drawing.Size(64, 17);
+            this._chkExcludeSourceIP.TabIndex = 10;
+            this._chkExcludeSourceIP.Text = "Exclude";
+            this._chkExcludeSourceIP.UseVisualStyleBackColor = true;
+            // 
+            // _txtUrl
+            // 
+            this._txtUrl.Location = new System.Drawing.Point(95, 81);
+            this._txtUrl.Name = "_txtUrl";
+            this._txtUrl.Size = new System.Drawing.Size(100, 20);
+            this._txtUrl.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "URL:";
+            // 
+            // _txtUser
+            // 
+            this._txtUser.Location = new System.Drawing.Point(95, 55);
+            this._txtUser.Name = "_txtUser";
+            this._txtUser.Size = new System.Drawing.Size(100, 20);
+            this._txtUser.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 56);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "User";
+            // 
+            // _txtSourceIP
+            // 
+            this._txtSourceIP.Location = new System.Drawing.Point(95, 29);
+            this._txtSourceIP.Name = "_txtSourceIP";
+            this._txtSourceIP.Size = new System.Drawing.Size(100, 20);
+            this._txtSourceIP.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Source IP:";
+            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this._rdoCountUserAgents);
+            this.groupBox3.Controls.Add(this._rdoCountIPAddresses);
+            this.groupBox3.Controls.Add(this._rdoCombineFiles);
             this.groupBox3.Controls.Add(this._btnGo);
             this.groupBox3.Controls.Add(this._chkAppendOutputFile);
             this.groupBox3.Controls.Add(this._txtOutputFile);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(12, 452);
+            this.groupBox3.Location = new System.Drawing.Point(12, 428);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(464, 83);
+            this.groupBox3.Size = new System.Drawing.Size(464, 163);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Output";
             // 
-            // label6
+            // _rdoCountIPAddresses
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 13);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Output File:";
+            this._rdoCountIPAddresses.AutoSize = true;
+            this._rdoCountIPAddresses.Location = new System.Drawing.Point(20, 43);
+            this._rdoCountIPAddresses.Name = "_rdoCountIPAddresses";
+            this._rdoCountIPAddresses.Size = new System.Drawing.Size(118, 17);
+            this._rdoCountIPAddresses.TabIndex = 23;
+            this._rdoCountIPAddresses.Text = "Count IP Addresses";
+            this._rdoCountIPAddresses.UseVisualStyleBackColor = true;
             // 
-            // _txtOutputFile
+            // _rdoCombineFiles
             // 
-            this._txtOutputFile.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this._txtOutputFile.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
-            this._txtOutputFile.Location = new System.Drawing.Point(94, 17);
-            this._txtOutputFile.Name = "_txtOutputFile";
-            this._txtOutputFile.Size = new System.Drawing.Size(233, 20);
-            this._txtOutputFile.TabIndex = 20;
-            // 
-            // _chkAppendOutputFile
-            // 
-            this._chkAppendOutputFile.AutoSize = true;
-            this._chkAppendOutputFile.Location = new System.Drawing.Point(333, 19);
-            this._chkAppendOutputFile.Name = "_chkAppendOutputFile";
-            this._chkAppendOutputFile.Size = new System.Drawing.Size(63, 17);
-            this._chkAppendOutputFile.TabIndex = 19;
-            this._chkAppendOutputFile.Text = "Append";
-            this._chkAppendOutputFile.UseVisualStyleBackColor = true;
+            this._rdoCombineFiles.AutoSize = true;
+            this._rdoCombineFiles.Checked = true;
+            this._rdoCombineFiles.Location = new System.Drawing.Point(20, 20);
+            this._rdoCombineFiles.Name = "_rdoCombineFiles";
+            this._rdoCombineFiles.Size = new System.Drawing.Size(90, 17);
+            this._rdoCombineFiles.TabIndex = 22;
+            this._rdoCombineFiles.TabStop = true;
+            this._rdoCombineFiles.Text = "Combine Files";
+            this._rdoCombineFiles.UseVisualStyleBackColor = true;
             // 
             // _btnGo
             // 
-            this._btnGo.Location = new System.Drawing.Point(371, 54);
+            this._btnGo.Location = new System.Drawing.Point(369, 122);
             this._btnGo.Name = "_btnGo";
             this._btnGo.Size = new System.Drawing.Size(75, 23);
             this._btnGo.TabIndex = 21;
@@ -324,37 +350,49 @@
             this._btnGo.UseVisualStyleBackColor = true;
             this._btnGo.Click += new System.EventHandler(this._btnGo_Click);
             // 
-            // _chkExcludeQueryString
+            // _chkAppendOutputFile
             // 
-            this._chkExcludeQueryString.AutoSize = true;
-            this._chkExcludeQueryString.Location = new System.Drawing.Point(200, 107);
-            this._chkExcludeQueryString.Name = "_chkExcludeQueryString";
-            this._chkExcludeQueryString.Size = new System.Drawing.Size(64, 17);
-            this._chkExcludeQueryString.TabIndex = 21;
-            this._chkExcludeQueryString.Text = "Exclude";
-            this._chkExcludeQueryString.UseVisualStyleBackColor = true;
+            this._chkAppendOutputFile.AutoSize = true;
+            this._chkAppendOutputFile.Location = new System.Drawing.Point(331, 87);
+            this._chkAppendOutputFile.Name = "_chkAppendOutputFile";
+            this._chkAppendOutputFile.Size = new System.Drawing.Size(63, 17);
+            this._chkAppendOutputFile.TabIndex = 19;
+            this._chkAppendOutputFile.Text = "Append";
+            this._chkAppendOutputFile.UseVisualStyleBackColor = true;
             // 
-            // _txtQueryString
+            // _txtOutputFile
             // 
-            this._txtQueryString.Location = new System.Drawing.Point(94, 107);
-            this._txtQueryString.Name = "_txtQueryString";
-            this._txtQueryString.Size = new System.Drawing.Size(100, 20);
-            this._txtQueryString.TabIndex = 20;
+            this._txtOutputFile.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this._txtOutputFile.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
+            this._txtOutputFile.Location = new System.Drawing.Point(92, 85);
+            this._txtOutputFile.Name = "_txtOutputFile";
+            this._txtOutputFile.Size = new System.Drawing.Size(233, 20);
+            this._txtOutputFile.TabIndex = 20;
             // 
-            // label7
+            // label6
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 108);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 13);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Query String:";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(17, 88);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 13);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Output File:";
+            // 
+            // _rdoCountUserAgents
+            // 
+            this._rdoCountUserAgents.AutoSize = true;
+            this._rdoCountUserAgents.Location = new System.Drawing.Point(20, 62);
+            this._rdoCountUserAgents.Name = "_rdoCountUserAgents";
+            this._rdoCountUserAgents.Size = new System.Drawing.Size(114, 17);
+            this._rdoCountUserAgents.TabIndex = 24;
+            this._rdoCountUserAgents.Text = "Count User Agents";
+            this._rdoCountUserAgents.UseVisualStyleBackColor = true;
             // 
             // dlgMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 547);
+            this.ClientSize = new System.Drawing.Size(511, 608);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -400,6 +438,9 @@
         private System.Windows.Forms.CheckBox _chkExcludeQueryString;
         private System.Windows.Forms.TextBox _txtQueryString;
         private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.RadioButton _rdoCountIPAddresses;
+		private System.Windows.Forms.RadioButton _rdoCombineFiles;
+        private System.Windows.Forms.RadioButton _rdoCountUserAgents;
     }
 }
 
